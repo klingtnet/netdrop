@@ -18,4 +18,4 @@ test:
 	go test .
 
 clean:
-	rm -f netdrop
+	git clean -fd
