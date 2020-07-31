@@ -27,7 +27,7 @@ jobs:
           draft: false
           prerelease: false
       - name: Upload Linux Build
-        id: upload-release-asset
+        id: upload-linux-build
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -37,7 +37,7 @@ jobs:
           asset_name: netdrop
           asset_content_type: application/octet-stream
       - name: Upload Windows Build
-        id: upload-release-asset
+        id: upload-windows-build
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -47,7 +47,7 @@ jobs:
           asset_name: netdrop.exe
           asset_content_type: application/octet-stream
       - name: Upload Mac Build
-        id: upload-release-asset
+        id: upload-mac-build
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -57,7 +57,7 @@ jobs:
           asset_name: netdrop.mac
           asset_content_type: application/octet-stream
       - name: Upload Raspberry Pi Build
-        id: upload-release-asset
+        id: upload-raspberry-pi-build
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
