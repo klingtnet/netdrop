@@ -2,6 +2,8 @@
 
 ![CI](https://github.com/klingtnet/netdrop/workflows/CI/badge.svg)
 
+[Releases](https://github.com/klingtnet/netdrop/releases)
+
 With netdrop you can send files or stream data from one peer to another inside a local network.
 Data is encrypted on transport and there is zero configuration necessary, just share the password with the receiver.
 
